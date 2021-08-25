@@ -1,0 +1,68 @@
+import java.util.*;
+import java.text.*;
+import java.lang.*;
+
+public class Sample { // Sample class will default have Object class as its superclass
+	//order of execution variables will be counted then static one will be executed then main()  
+	int y=10;
+//	public void Sample(int y)
+//	{
+//		System.out.println(y);  // constructor : It will execute when invoked from main
+//	}
+	  
+    {
+        System.out.println("1st instance init");
+    }
+  
+    {
+        System.out.println("2nd instance init");
+    }
+	static//static variable will execute first
+	{
+		System.out.println("y"); // static Block 
+	}
+	
+	Sample(int x)
+    {
+        System.out.println("ONE argument constructor");
+    }
+  
+    Sample()
+    {
+        System.out.println("No  argument constructor");
+    }
+  
+    static
+    {
+        System.out.println("1st static init");
+    }
+
+  
+    static
+    {
+        System.out.println("2nd static init");
+    }
+	public static void main(String[] args) {
+//		Sample s=new Sample();
+//		s.NewCons(5);
+//		new Sample();
+		new Sample(8);
+//		Scanner s =new Scanner(System.in);
+//		String st;
+//		st=s.nextLine();
+//		s.close();
+//		char arr[]=st.toCharArray();
+//        System.out.println(st);
+//        System.out.println(arr[3]);
+//        for(int i = 0; i < st.length(); i++) {  
+//            for(int j = i; j < st.length(); j++) {  
+//                System.out.print(st.substring(i, j+1)+" ");    
+//            }  
+//	}
+//        Date date = Calendar.getInstance().getTime();  
+//        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
+//        String strDate = dateFormat.format(date);  
+//        System.out.println("Converted String: " + strDate);
+         
+	}
+	}
